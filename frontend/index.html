@@ -17,6 +17,14 @@
         }
       })();
     </script>
+      <script>
+        // Restaurer le path après redirection depuis 404.html
+        const redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, null, redirect);
+        }
+      </script>
     <meta name="description" content="Plateforme éducative nouvelle génération avec IA conversationnelle, analytics avancés et interface futuriste pour les entreprises" />
     <meta name="author" content="EduPlatform" />
 
