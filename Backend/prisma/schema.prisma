@@ -1,0 +1,260 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  INSTRUCTOR
+  STUDENT
+  INSPECTOR
+  ADMIN
+  TEACHER
+  COORDINATOR
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+  PAUSED
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  firstName    String
+  lastName     String
+  email        String   @unique
+  password     String
+  organization String?  // Made nullable
+  role         Role
+  avatar       String?  // URL ou chemin de l'avatar, nullable
+  firstLogin   Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  students     Student[]    @relation("UserStudents")
+  classes      Class[]      @relation("UserClasses")
+  messages     Message[]    @relation("UserMessages")
+  meetings     Meeting[]
+
+  Document Document[]
+
+  ConversationParticipant ConversationParticipant[]
+
+  posts      Post[]      @relation("PostAuthor")
+  comments   Comment[]   @relation("CommentAuthor")
+  likes      Like[]      @relation("UserLikes")
+  labs       Lab[]       @relation("LabInstructor")
+}
+
+model Student {
+  id           Int      @id @default(autoincrement())
+  userId       Int      @unique
+  user         User     @relation("UserStudents", fields: [userId], references: [id], onDelete: Cascade)
+  classes      ClassStudent[]
+  messages     Message[]    @relation("StudentMessages")
+  lastActive   DateTime? @default(now())
+  status       Status   @default(ACTIVE)
+  participation Int     @default(0)
+  messagesCount Int     @default(0) // Nouveau champ pour compter les messages
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  leaveRequests ClassLeaveRequest[]
+
+  ConversationParticipant ConversationParticipant[]
+}
+
+model Class {
+  id           Int            @id @default(autoincrement())
+  title        String
+  code         String         @unique
+  teacherId    Int
+  teacher      User           @relation("UserClasses", fields: [teacherId], references: [id], onDelete: Cascade)
+  students     ClassStudent[]
+  messages     Message[]      @relation("ClassMessages")
+  studentsCount Int           @default(0) // Mis à jour automatiquement via hook
+  lastActivity DateTime       @default(now())
+  status       Status         @default(ACTIVE)
+  schedule     String
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  documents    Document[]     @relation("ClassDocuments")
+  meetings     Meeting[]
+  leaveRequests ClassLeaveRequest[]
+
+  ClassInvitation ClassInvitation[]
+
+  Conversation Conversation[]
+  labs       Lab[]       @relation("ClassLabs")
+}
+
+model ClassStudent {
+  id         Int     @id @default(autoincrement())
+  classId    Int
+  class      Class   @relation(fields: [classId], references: [id], onDelete: Cascade)
+  studentId  Int
+  student    Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  @@unique([classId, studentId])
+}
+
+model ClassInvitation {
+  id          Int      @id @default(autoincrement())
+  classId     Int
+  class       Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  invitedEmail String
+  inviteToken String   @unique
+  status      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ClassLeaveRequest {
+  id        Int                 @id @default(autoincrement())
+  studentId Int
+  student   Student             @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  classId   Int
+  class     Class               @relation(fields: [classId], references: [id], onDelete: Cascade)
+  reason    String?
+  status    ClassLeaveStatus    @default(PENDING)
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+
+  @@unique([studentId, classId, status])
+}
+
+model Meeting {
+  id            Int       @id @default(autoincrement())
+  title         String
+  description   String?
+  startTime     DateTime
+  duration      Int       // Duration in minutes
+  createdById   Int
+  createdBy     User      @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  classId       Int
+  class         Class     @relation(fields: [classId], references: [id], onDelete: Cascade)
+  meetingLink   String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+enum ClassLeaveStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Conversation {
+  id           Int       @id @default(autoincrement())
+  isIndividual Boolean   @default(false)
+  classId      Int?      @map("classId")
+  class        Class?    @relation(fields: [classId], references: [id], onDelete: SetNull)
+  participants ConversationParticipant[]
+  messages     Message[] @relation("ConversationMessages")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model ConversationParticipant {
+  id            Int         @id @default(autoincrement())
+  conversationId Int         @map("conversationId")
+  conversation  Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  userId        Int?        @map("userId")
+  user          User?       @relation(fields: [userId], references: [id], onDelete: SetNull)
+  studentId     Int?        @map("studentId")
+  student       Student?    @relation(fields: [studentId], references: [id], onDelete: SetNull)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Message {
+  id            Int         @id @default(autoincrement())
+  content       String
+  role          String      @default("user")
+  timestamp     DateTime    @default(now())
+  userId        Int?        @map("userId")
+  user          User?       @relation("UserMessages", fields: [userId], references: [id], onDelete: SetNull)
+  studentId     Int?        @map("studentId")
+  student       Student?    @relation("StudentMessages", fields: [studentId], references: [id], onDelete: SetNull)
+  classId       Int?        @map("classId")
+  class         Class?      @relation("ClassMessages", fields: [classId], references: [id], onDelete: SetNull)
+  conversationId Int?        @map("conversationId")
+  conversation  Conversation? @relation("ConversationMessages", fields: [conversationId], references: [id], onDelete: SetNull)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Document {
+  id          Int      @id @default(autoincrement())
+  classId     Int
+  class       Class    @relation("ClassDocuments", fields: [classId], references: [id], onDelete: Cascade)
+  name        String
+  type        String   // Ex: "pdf", "presentation", "document", "spreadsheet", "image", "video"
+  size        String   // Ex: "2.4 MB"
+  uploadedBy  Int      // Référence à User.id
+  uploader    User     @relation(fields: [uploadedBy], references: [id], onDelete: SetNull)
+  uploadedAt  DateTime @default(now())
+  downloads   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Post {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String
+  authorId    Int
+  author      User      @relation("PostAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  likes       Like[]
+  comments    Comment[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Like {
+  id          Int       @id @default(autoincrement())
+  postId      Int
+  post        Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  userId      Int
+  user        User      @relation("UserLikes", fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  
+  @@unique([postId, userId])
+}
+
+model Comment {
+  id          Int       @id @default(autoincrement())
+  content     String
+  postId      Int
+  post        Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  authorId    Int
+  author      User      @relation("CommentAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+enum LabStatus {
+  CREATED
+  RUNNING
+  STOPPED
+  ERROR
+}
+
+model Lab {
+  id            Int       @id @default(autoincrement())
+  title         String
+  description   String?
+  vagrantBox    String    // Box Vagrant (ex: ubuntu/jammy64)
+  vagrantConfig String?   @db.Text // Configuration JSON pour Vagrant (memory, cpus, network, etc.)
+  vmPath        String?   // Chemin où le lab Vagrant est créé
+  status        LabStatus @default(CREATED)
+  instructorId Int
+  instructor    User      @relation("LabInstructor", fields: [instructorId], references: [id], onDelete: Cascade)
+  classId       Int?      // Optionnel : lier à une classe
+  class         Class?    @relation("ClassLabs", fields: [classId], references: [id], onDelete: SetNull)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}

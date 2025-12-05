@@ -1,0 +1,47 @@
+1. Définition
+
+GRE (Generic Routing Encapsulation) est un protocole de tunneling développé par Cisco.
+
+Il encapsule un paquet réseau à l’intérieur d’un autre paquet IP pour permettre son transport sur un réseau IP.
+
+Utilisé pour créer des tunnels point-à-point entre deux routeurs sur Internet ou sur un réseau privé.
+
+2. Fonctionnement
+
+Le paquet original (par exemple, un paquet IPv4, IPv6, ou même un autre protocole) est encapsulé dans un en-tête GRE et ensuite dans un en-tête IP.
+
+Le paquet encapsulé peut alors traverser des réseaux qui ne supportent pas nativement le protocole original.
+
+Exemple : transporter des paquets IPv6 sur un réseau IPv4.
+
+3. Structure d’un paquet GRE
+
+Un paquet GRE comprend :
+
+En-tête IP : utilisé pour l’acheminement entre les routeurs du tunnel.
+
+En-tête GRE : contient des informations sur le type de protocole encapsulé et éventuellement un identifiant.
+
+Paquet encapsulé : le paquet original, comme IPv4, IPv6, ou autre.
+
+4. Usage typique
+
+VPN simples : GRE peut être utilisé pour créer un tunnel VPN (souvent combiné avec IPsec pour la sécurité).
+
+Transport de protocoles multiples : GRE peut transporter des protocoles non routables sur Internet.
+
+Mise en réseau d’entreprise : relier deux sites distants via un tunnel sur Internet.
+
+5. Avantages
+
+Supporte plusieurs protocoles de couche 3 (pas seulement IP).
+
+Simple à configurer pour des tunnels point-à-point.
+
+6. Limitations
+
+Pas sécurisé par défaut : il ne chiffre pas les données (il faut IPsec si on veut de la sécurité).
+
+Overhead : ajoute un en-tête supplémentaire, donc le paquet final est plus gros.
+
+Pas optimisé pour le routage dynamique : nécessite souvent une configuration manuelle.

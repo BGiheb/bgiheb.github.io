@@ -1,0 +1,968 @@
+23/02/2025
+1
+Introduction Générale
+Introduction
+Qu’entendons
+nous par la notion de cloud dans le monde de
+l’informatique?
+•
+Une messagerie (Hotmail, Gmail
+•
+Un espace de stockage ( DropBox , Google Drive, skyDrive
+•
+Une suite bureautique (Office 365, Google Docs)
+•
+Partage de vidéo ( YouTube , Dailymotion
+•
+Des réseaux sociaux ( Facebook , LinkedIn , Viadeo
+2
+La révolution Internet
+Ameni KALLEL CHAARI
+23/02/2025
+2
+Introduction
+Introduction
+•
+•L’internetL’internetprovientprovientd’ARPANETd’ARPANETquiquiavaitavaitpourpourbutbutmilitairemilitairededegarantirgarantirleletransporttransportd’informationd’informationdedesitesitedistantdistantààsitesitedistantdistantmêmemêmesisidesdeszoneszonesgéographiquementgéographiquementdistantes,distantes,touttoutcecicecigrâcegrâceààlalaredondanceredondancededecheminschemins(routes)(routes)etetdesdescomposantscomposants(routeurs),(routeurs),etetgrâcegrâceauxauxmécanismesmécanismesdederoutageroutage..
+•
+•L’internetL’internets’ests’estdéveloppédéveloppéetetààpermispermisalorsalorsauxauxutilisateursutilisateursd’accéderd’accéderààdesdesminesminesd’informationsd’informationssanssansavoiravoirououellesellessontsontsituéessituéesdansdanslelemondemonde..
+Ameni KALLEL CHAARI 3
+Introduction
+Introduction
+•
+•L’utilisateurL’utilisateurnenedemandedemandeniniununlogiciellogicielniniuneuneapplicationapplication
+•
+•L’utilisateurL’utilisateurdemandedemandeununserviceservicewebwebfacilefacileavecavecdesdesdonnéesdonnéesstockéesstockéesdansdansdesdescentrescentresdededonnéesdonnéesfiablesfiablesetetleslesniveauxniveauxdedeserviceservicenécessairesnécessairesààsonsonactivitéactivité..
+Ameni KALLEL CHAARI 4
+23/02/2025
+3
+Introduction
+Introduction
+•
+•ExempleExemplededemessageriemessagerie
+5
+L’utilisateur
+L’utilisateur
+•
+•ClientClientOutlook,Outlook,Lotus,Lotus,ZimbraZimbra
+•
+•UnUnserviceservicededemessageriemessagerie
+Besoin
+Besoinfonctionnelfonctionnel
+Besoins
+Besoinsnonnonfonctionnelsfonctionnels
+(
+(NiveauxNiveauxdedeservices)services)
+•
+•LaLapossibilitépossibilitédedes‘ys‘yconnecterconnecterd’oùd’oùililveutveutetetdepuisdepuisn’importen’importequelsquelspériphériquespériphériquesdd’accès’accèsetetààn’importen’importequellequelleheureheure..
+•
+•LaLafiabilitéfiabilitédedesasaconnexionconnexion..
+•
+•LaLacapacitécapacitédedestockagestockage..
+•
+•LaLafiabilitéfiabilitédedesessesdonnéesdonnées..
+•
+•LaLasécuritésécurité..
+Ameni KALLEL CHAARI
+Contraintes d’un
+Contraintes d’un cloudcloud??
+6
+•
+•Stockage/calcul distant Stockage/calcul distant
+•
+•VirtualisationVirtualisation
+•
+•Abstraction du Abstraction du matériel matériel
+•
+•….….
+23/02/2025
+4
+Chapit
+Chapitrree11: : Notions de base de Notions de base de la la virtualisationvirtualisation
+Ameni KALLEL CHAARI
+Ameni KALLEL CHAARI
+Cou
+Courrs: Virtualisation & Cloud s: Virtualisation & Cloud ComputingComputing
+Ameni KALLEL CHAARI 7
+Introduction
+Introduction
+Ce chapitre vise à introduire les termes de la
+Ce chapitre vise à introduire les termes de la virtualisationvirtualisation..
+Objectifs :
+Objectifs :
+A la fin de ce chapitre, les étudiants auront les connaissances nécessaires pour :
+A la fin de ce chapitre, les étudiants auront les connaissances nécessaires pour :
+–
+–Savoir définir la notion de la Savoir définir la notion de la virtualisationvirtualisation..
+–
+–Prendre connaissance des domaines de la Prendre connaissance des domaines de la virtualisationvirtualisation..
+–
+–Déterminer les avantages et les inconvénients de la Déterminer les avantages et les inconvénients de la virtualisationvirtualisation..
+–
+–Comprendre les différents types de la Comprendre les différents types de la virtualisationvirtualisation..
+Eléments de contenu
+Eléments de contenu
+–
+–Définition de la Définition de la virtualisationvirtualisation..
+–
+–Les domaines de la Les domaines de la virtualisationvirtualisation..
+–
+–Les différents types de la Les différents types de la virtualisationvirtualisation..
+–
+–Les avantages de la Les avantages de la virtualisationvirtualisation..
+–
+–Les inconvénients de la Les inconvénients de la virtualisationvirtualisation..
+Ameni KALLEL CHAARI 8
+23/02/2025
+5
+Définition
+Définition
+•
+•La virtualisation est un processus qui va La virtualisation est un processus qui va permettre de masquer les caractéristiques permettre de masquer les caractéristiques physiques d’une ressource informatique de physiques d’une ressource informatique de manière à simplifier les interactions entre manière à simplifier les interactions entre cette ressource et d’autres systèmes, d’autres cette ressource et d’autres systèmes, d’autres applications et les utilisateurs. applications et les utilisateurs.
+Ameni KALLEL CHAARI 9
+Définition
+Définition
+•
+•Elle est basée sur une couche d’abstractionElle est basée sur une couche d’abstraction
+Couche Inférieure
+Couche Inférieure
+Couche Supérieure
+Couche Supérieure
+Couche d’Abstraction
+Couche d’Abstraction
+Schéma de principe de la virtualisation
+Schéma de principe de la virtualisation
+Ameni KALLEL CHAARI 10
+23/02/2025
+6
+Historique
+Historique
+Ameni KALLEL CHAARI 11
+Pourquoi la virtualisation
+Pourquoi la virtualisation??
+Ameni KALLEL CHAARI 12
+23/02/2025
+7
+Ameni KALLEL CHAARI 13
+La virtualisation:
+La virtualisation: Une vue logique des Une vue logique des ressources ITressources IT
+Les domaines de la virtualisation
+Les domaines de la virtualisation
+•
+•La virtualisation d’applicationsLa virtualisation d’applications
+•
+•La virtualisation de réseauxLa virtualisation de réseaux
+•
+•La virtualisation de stockageLa virtualisation de stockage
+•
+•La virtualisation des serveursLa virtualisation des serveurs
+Ameni KALLEL CHAARI 14
+23/02/2025
+8
+La virtualisation d’applications
+La virtualisation d’applications
+Ameni KALLEL CHAARI 15
+La virtualisation d’applications
+La virtualisation d’applications
+•
+•La technologie deLa technologie devirtualisation d’applications virtualisation d’applications (anciennement (anciennement appelée publication d’applications ou serverappelée publication d’applications ou server--based computing) based computing) permet de mettre à disposition les applications comme un service permet de mettre à disposition les applications comme un service en s’affranchissant des contraintes techniques de déploiementen s’affranchissant des contraintes techniques de déploiement..
+•
+•L’ensemble des données de l’utilisateur, ainsi que les applications, L’ensemble des données de l’utilisateur, ainsi que les applications, sont hébergées dans un datasont hébergées dans un data--center sécurisé pour une meilleure center sécurisé pour une meilleure disponibilité et une sécurité accrue des donnéesdisponibilité et une sécurité accrue des données..
+Ameni KALLEL CHAARI 16
+23/02/2025
+9
+La virtualisation des serveurs
+La virtualisation des serveurs
+Ameni KALLEL CHAARI 17
+Un peu de vocabulaire
+Un peu de vocabulaire
+Ameni KALLEL CHAARI 18
+23/02/2025
+10
+La virtualisation des serveurs
+La virtualisation des serveurs
+•
+•La virtualisation des serveurs consiste à masquer les La virtualisation des serveurs consiste à masquer les ressources du serveur, càd le nombre et les caractéristiques ressources du serveur, càd le nombre et les caractéristiques de chaque machine physique, de chaque processeur et de de chaque machine physique, de chaque processeur et de chaque système d’exploitation pour les utilisateurs de ce chaque système d’exploitation pour les utilisateurs de ce serveur. serveur.
+•
+•L’administrateur du serveur va utiliser un logiciel grâce auquel L’administrateur du serveur va utiliser un logiciel grâce auquel il va diviser un serveur physique (constitué ou non de il va diviser un serveur physique (constitué ou non de plusieurs machines distinctes) en plusieurs environnements plusieurs machines distinctes) en plusieurs environnements virtuels isolés les uns des autres (voir figure suivante). virtuels isolés les uns des autres (voir figure suivante).
+•
+•Ces environnements isolés sont parfois appelés machines Ces environnements isolés sont parfois appelés machines virtuelles, serveurs privés virtuels, instances, ou conteneursvirtuelles, serveurs privés virtuels, instances, ou conteneurs..
+Ameni KALLEL CHAARI 19
+La virtualisation des serveurs
+La virtualisation des serveurs
+Ameni KALLEL CHAARI 20
+23/02/2025
+11
+Caractéristiques de la virtualisation
+Caractéristiques de la virtualisation des serveursdes serveurs
+•
+•De multiples machines virtuelles fonctionnent en même De multiples machines virtuelles fonctionnent en même temps sur un seul serveur physiquetemps sur un seul serveur physique..
+•
+•Chaque machine virtuelle est isolée des autres machines Chaque machine virtuelle est isolée des autres machines virtuelles sur le même serveurvirtuelles sur le même serveur
+Ameni KALLEL CHAARI 21
+Caractéristiques de la virtualisation
+Caractéristiques de la virtualisation des serveursdes serveurs
+•
+•Pour chaque machine virtuelle, on détermine une Pour chaque machine virtuelle, on détermine une attribution de ressourcesattribution de ressources::
+
+Ressources communes (Ressources communes (CPU,mémoireCPU,mémoire) selon des limites fixées) selon des limites fixées;;
+
+Ressources dédiées pour chaque machine virtuelle (disque, interface Ressources dédiées pour chaque machine virtuelle (disque, interface réseau, etcréseau, etc).).
+•
+•L’intégralité de la machine virtuelle est stockée dans des L’intégralité de la machine virtuelle est stockée dans des fichiers et peut être déplacée et copiée en déplaçant ou fichiers et peut être déplacée et copiée en déplaçant ou copiant ces fichierscopiant ces fichiers
+Ameni KALLEL CHAARI 22
+23/02/2025
+12
+Déplacement à chaud
+Déplacement à chaud
+•
+•Cette opération implique une coordination précise entre Cette opération implique une coordination précise entre les deux hôtes participant au déplacement avec un les deux hôtes participant au déplacement avec un transfert de l’empreint mémoire de la VM de manière transfert de l’empreint mémoire de la VM de manière imperceptible aux clients de la VMimperceptible aux clients de la VM..
+•
+•Les deux hôtes doivent bien entendu avoir les disques de Les deux hôtes doivent bien entendu avoir les disques de la VM en communla VM en commun
+Ameni KALLEL CHAARI 23
+•
+•Le déplacement d’une VM à froid (C’estLe déplacement d’une VM à froid (C’est--àà--dire que la VM dire que la VM est fonctionnellement éteinte) se résume le plus souvent est fonctionnellement éteinte) se résume le plus souvent à une copie des fichiersà une copie des fichiers::
+
+Le descriptif de la VMLe descriptif de la VM
+
+Les fichiers du swap mémoireLes fichiers du swap mémoire
+
+Les fichiers disqueLes fichiers disque
+Ameni KALLEL CHAARI 24
+Déplacement à froid
+Déplacement à froid
+23/02/2025
+13
+Découvrez la fonction de
+Découvrez la fonction de l’hyperviseurl’hyperviseur
+L’hyperviseur a 2 rôles majeurs :
+L’hyperviseur a 2 rôles majeurs :
+•
+•Créer des ressources virtuelles propres à chaque VMCréer des ressources virtuelles propres à chaque VM;;
+Ameni KALLEL CHAARI 25
+Découvrez la fonction de
+Découvrez la fonction de l’hyperviseurl’hyperviseur
+•
+•RépartirRépartirsessesproprespropresressourcesressources::
+
+l’hyperviseurl’hyperviseurjouejouelelerôlerôlededechefchefd’orchestred’orchestrepourpourallouerallouerààchaquechaqueVMVMleslesressourcesressourcesdontdontellesellesontontbesoin,besoin,auaubonbonmomentmomentetetdansdansleslesbonnesbonnesquantitésquantités(mais(maisdansdansuneunecertainecertainelimitelimitequiquiauraauraétéétéfixéefixée));;
+
+OnOnpeutpeutassimilerassimilercelacelaààununorganismeorganismevivant,vivant,commecommeununarbre,arbre,quiquidisposedisposedederessourcesressources(eau,(eau,nutriments)nutriments)puiséespuiséesdansdanslelesol,sol,etetvavaleslesdispatcherdispatcherversverssessesbranches,branches,enenfonctionfonctiondedeleursleursbesoinsbesoinsrespectifsrespectifs..
+Ameni KALLEL CHAARI 26
+23/02/2025
+14
+Hyperviseur de type 2
+Hyperviseur de type 2
+L'
+L'hyperviseurhyperviseurdedetypetype22,,ououhostedhostedhypervisorhypervisor(hyperviseur(hyperviseurhébergé),hébergé),estestleleplusplusfacilefacileààmettremettreenenplaceplace..IlIls’installes’installesimplementsimplementcommecommen’importen’importequellequelleapplicationapplicationsursurvotrevotresystèmesystèmeetetpermet,permet,uneunefoisfoisinstallé,installé,dedecréercréerdesdesVMVMindépendantesindépendantesdedel’OSl’OShôtehôte..
+Ameni KALLEL CHAARI 27
+Les utilisations d’un hyperviseur de
+Les utilisations d’un hyperviseur de type 2type 2
+Ameni KALLEL CHAARI 28
+•
+•TesterTesterununOSOSsanssansformaterformatervotrevotremachinemachinephysiquephysique;;
+•
+•TesterTesterououutiliserutiliserrégulièrementrégulièrementuneuneapplicationapplicationsursurununOSOSenenparticulierparticulier;;
+•
+•SimulerSimuleruneune22èmeèmemachinemachineetetfairefairedesdesteststestsdedecommunicationcommunicationsimplessimples;;
+•
+•CréerCréerununpetitpetitréseauréseaudedeplusieursplusieursVMsVMspourpourtestertesterdesdesprotocolesprotocolesréseau,réseau,desdesrèglesrèglesdedeparepare--feu,feu,configurerconfigurerununserveurserveurdedesupervisionsupervisionououautreautre..
+23/02/2025
+15
+Les principaux hyperviseurs de type 2
+Les principaux hyperviseurs de type 2
+Ameni KALLEL CHAARI 29
+Hyperviseur de type 1
+Hyperviseur de type 1
+L'
+L'hyperviseurhyperviseurdedetypetype11,,ououhyperviseurhyperviseurnatifnatif,,est,est,contrairementcontrairementauautypetype22,,installéinstallédirectementdirectementsursurlelematériel,matériel,sanssansOSOSintermédiaireintermédiaire::
+
+l’hyperviseurl’hyperviseuraaununaccèsaccèsdirectdirectauxauxressourcesressources(sans(sanspasserpasserparparununOS)OS);;
+
+lalatotalitétotalitédesdesressourcesressourcesestestdédiéedédiéeauxauxVMVM..
+Ameni KALLEL CHAARI 30
+23/02/2025
+16
+Les utilisations d’un hyperviseur de
+Les utilisations d’un hyperviseur de type 1type 1
+Ameni KALLEL CHAARI 31
+•
+•Réduire les coûts matériels et de maintenance ;Réduire les coûts matériels et de maintenance ;
+•
+•Optimiser les ressources physiques ;Optimiser les ressources physiques ;
+•
+•Répartir la charge dynamiquement ;Répartir la charge dynamiquement ;
+•
+•Permettre la haute disponibilité des serveurs ;Permettre la haute disponibilité des serveurs ;
+•
+•Créer des VM de préproduction pour les tester en Créer des VM de préproduction pour les tester en environnement réel avant de les mettre en productionenvironnement réel avant de les mettre en production..
+Les principaux hyperviseurs de type 1
+Les principaux hyperviseurs de type 1
+Ameni KALLEL CHAARI 32
+23/02/2025
+17
+Les différents types de virtualisation
+Les différents types de virtualisation
+Les technologies les plus répandues sont :
+Les technologies les plus répandues sont :
+•
+•la paravirtualisation la paravirtualisation
+•
+•la virtualisation complète la virtualisation complète
+•
+•la virtualisation assistée par le matériel la virtualisation assistée par le matériel
+•
+•le cloisonnementle cloisonnement..
+Ameni KALLEL CHAARI 33
+virtualisation
+virtualisation
+système
+système
+modifiés
+modifiés
+paravirtualisation
+paravirtualisation
+non modifiés
+non modifiés
+V
+V. complète. complète
+V
+V. assistée par le . assistée par le matérielmatériel
+processus
+processus
+cloisonnement
+cloisonnement
+Virtualisation complète
+Virtualisation complète
+Ameni KALLEL CHAARI
+34
+•
+•DansDanslalaplupartplupartdesdescas,cas,ilils'agits'agitdedelalatechniquetechniquededevirtualisationvirtualisationutiliséesutiliséesparparlesleshyperviseurshyperviseursdedetypetype22..
+•
+•L’hyperviseurL’hyperviseurémuleémuleununenvironnementenvironnementmatérielmatérielcompletcompletsursurchaquechaquemachinemachinevirtuellevirtuelle..
+•
+•LesLessystèmessystèmesd'exploitationd'exploitationinvitésinvitésn'ontn'ontpaspasconscienceconscienced'êtred'êtrevirtualisésvirtualisés..CesCesderniersdernierscroientcroientdialoguerdialoguerdirectementdirectementavecavecleditleditmatérielmatériel..
+•
+•CetteCetteapprocheapprochepermetpermetl’exploitationl’exploitationdedesystèmessystèmesinvitésinvitésnonnonmodifiésmodifiés..
+•
+•LesLessolutionssolutionslogicielleslogiciellespopulairespopulaires::OracleOracleVMVMVirtualBox,VirtualBox,ParallelsParallelsWorkstation,Workstation,VMwareVMwareWorkstation,Workstation,MicrosoftMicrosoftHyperHyper--VVetetMicrosoftMicrosoftVirtualVirtualServer,Server,etcetc..
+23/02/2025
+18
+Para
+Para--virtualisationvirtualisation
+•
+•AvecAveclalaparavirtualisation,paravirtualisation,l’hyperviseurl’hyperviseurmetmetsimplementsimplementààdispositiondispositionuneuneinterfaceinterfacededeprogrammationprogrammation(API)(API)quiquipermetpermetauxauxsystèmessystèmesd’exploitationd’exploitationinvitésinvitésd’accéderd’accéderdirectementdirectementauaumatérielmatérielphysiquephysiquedudusystèmesystèmehôtehôte..
+•
+•LaLaparavirtualisationparavirtualisationoffreoffredoncdoncununavantageavantagededeperformanceperformanceparparrapportrapportààlalavirtualisationvirtualisationcomplètecomplète..
+•
+•SeulsSeulsleslessystèmessystèmesinvitésinvitésmodifiésmodifiéspeuventpeuventêtreêtreparavirtualisésparavirtualisés..
+35
+Ameni KALLEL CHAARI
+Para
+Para--virtualisationvirtualisation
+•
+•ParmiParmilesleshyperviseurshyperviseursquiquipermettentpermettentlalaparavirtualisationparavirtualisation::Xen,Xen,OracleOracleVMVMServer,Server,VMWareVMWareESXI,ESXI,etcetc..
+•
+•DansDansleslesproduitsproduitscommerciaux,commerciaux,elleelleprendprendlalaformeformed'und'unagentagents'installants'installantdansdanslalamachinemachinevirtuelle,virtuelle,etetsesenomme,nomme,selonselonleleproduit,produit,««VMWareVMWareToolsTools»,»,««XenServerXenServerToolsTools»,»,««VirtualBoxVirtualBoxGuestGuestAdditionsAdditions»,»,etcetc..
+36
+Ameni KALLEL CHAARI
+23/02/2025
+19
+la virtualisation assistée par le
+la virtualisation assistée par le matérielmatériel
+•
+•LeLepartitionnementpartitionnementmatériel,matériel,enfin,enfin,estestlalatechniquetechniquehistoriquehistoriqueutiliséeutiliséesursurleslesgrosgrossystèmessystèmes..
+•
+•ElleElleconsisteconsisteààséparerséparerleslesressourcesressourcesmatériellesmatériellesauauniveauniveaudedelalacartecartemèremèrededelalamachinemachine..
+•
+•CetteCettetechniquetechniqueestestsurtoutsurtoutrépanduerépanduedansdansleslesserveursserveurshautshautsdedegamme,gamme,parparexempleexempleleslesLogicalLogicalDomainsDomainsdedechezchezSunSun..
+•
+•CetteCettetechnologietechnologieaaétéétédéveloppéedéveloppéeparparIntelInteletetAMDAMDpourpourleursleursplatesplates--formesformesdedeserveursserveursetetaaétéétéconçueconçuepourpouramélioreraméliorerleslesperformancesperformancesduduprocesseurprocesseuretetsurmontersurmonterleslesdéfisdéfisdedevirtualisationvirtualisationsimplessimplescommecommelalatraductiontraductiond'instructionsd'instructionsetetd'adressesd'adressesmémoiremémoire(voir(voirlalapartiepartie«Virtualisation«VirtualisationduduCPUCPU»)»).. 37 Ameni KALLEL CHAARI
+Le cloisonnement
+Le cloisonnement
+•
+•Le cloisonnement (aussi appelée l’isolation) est une Le cloisonnement (aussi appelée l’isolation) est une technique qui intervient au sein d’un même technique qui intervient au sein d’un même système d'exploitation. Elle permet de séparer un système d'exploitation. Elle permet de séparer un système en plusieurs contextes ou environnements système en plusieurs contextes ou environnements (appelés conteneurs ou isolateur). (appelés conteneurs ou isolateur).
+•
+•Chacun d'entre eux est régi par l'OS hôte, mais les Chacun d'entre eux est régi par l'OS hôte, mais les programmes de chaque contexte ne peuvent programmes de chaque contexte ne peuvent communiquer qu'avec les processus et les communiquer qu'avec les processus et les ressources associées à leur propre contexteressources associées à leur propre contexte..
+Ameni KALLEL CHAARI 38
+23/02/2025
+20
+Le cloisonnement
+Le cloisonnement
+•
+•Un isolateur est une couche logicielle permettant Un isolateur est une couche logicielle permettant d'isoler des applications dans ces contextes d'isoler des applications dans ces contextes d'exécution différentesd'exécution différentes..
+•
+•La principale contrainte de ce La principale contrainte de ce modèle de virtualisation réside modèle de virtualisation réside dans le fait que les systèmes dans le fait que les systèmes invités doivent impérativement invités doivent impérativement être du même type que le système être du même type que le système hôtehôte..
+•
+•Exemples : Exemples : Linux VServer, Linux VServer, Virtuozzo, OpenVZ, Docker, etcVirtuozzo, OpenVZ, Docker, etc..
+Ameni KALLEL CHAARI 39
+Quelques solutions (Open source
+Quelques solutions (Open source))
+•
+•QEMU QEMU
+•
+•KVM KVM
+•
+•VirtualBox VirtualBox
+•
+•OpenVZ OpenVZ
+•
+•DockerDocker
+Ameni KALLEL CHAARI 40
+23/02/2025
+21
+Ameni KALLEL CHAARI 41
+Ameni KALLEL CHAARI 42
+23/02/2025
+22
+Ameni KALLEL CHAARI 43
+Ameni KALLEL CHAARI 44
+23/02/2025
+23
+Ameni KALLEL CHAARI 45
+La virtualisation du CPU et de la
+La virtualisation du CPU et de la mémoiremémoire
+Ameni KALLEL CHAARI 46
+23/02/2025
+24
+Principe de la virtualisation du CPU
+Principe de la virtualisation du CPU
+•
+•LaLavirtualisationvirtualisationduduCPUCPUestestlalaprincipaleprincipaleressourceressourceinformatiqueinformatiquequiquidoitdoitêtreêtrecontrôléecontrôléedansdansununenvironnementenvironnementvirtualisévirtualisé..
+•
+•UnUnjeujeud'instructionsd'instructionsestestl'ensemblel'ensembledesdesinstructionsinstructionsmachinesmachinesqu'unqu'unprocesseurprocesseurd'ordinateurd'ordinateurpeutpeutexécuterexécuter
+
+IlIldéfinitdéfinitlalamanièremanièredontdontununprocesseurprocesseurtraitetraiteetetexécuteexécutedifférentesdifférentesinstructionsinstructionstransmisestransmisesparparl’OSl’OSetetleslesprogrammesprogrammeslogicielslogiciels..
+
+LesLesinstructionsinstructionssontsontinterprétéesinterprétéesdirectementdirectementparparleleprocesseurprocesseur..
+•
+•CasCasdesdesinstructionsinstructionscritiques,critiques,exemple,exemple,arrêtarrêtsystèmesystème::
+
+DansDanslelecascasdedelalavirtualisation,virtualisation,cescesinstructionsinstructionsserontseront--ellesellestransmisestransmisesdirectementdirectementauauCPUCPUpourpourexécution,exécution,ououdoiventdoivent--ellesellesavoiravoirununtraitementtraitementparticulierparticulier(ex(ex..traductiontraductionbinairebinaireréaliséeréaliséeparparl’hyperviseurl’hyperviseurdansdanslelecascasd’uned’unevirtualisationvirtualisationcomplètecomplèteououl’utilisationl’utilisationdesdesAPI(s)API(s)dansdanslelecascasd’uned’uneparapara--virtualisationvirtualisation)?)?
+Ameni KALLEL CHAARI 47
+Virtualisation de CPU assistée par
+Virtualisation de CPU assistée par matérielmatériel
+•
+•LaLavirtualisationvirtualisationmatériellematérielle(ou(ouVirtualisationVirtualisationassistéeassistéeparparlelematériel)matériel)estestuneunetechniquetechniquededevirtualisationvirtualisationquiquipermetpermetuneunevirtualisationvirtualisationefficaceefficaceenenutilisantutilisantleslescapacitéscapacitésmatérielles,matérielles,principalementprincipalementleleCPUCPUdedel’hôtel’hôte..
+•
+•LeLesupportsupportdedelalavirtualisationvirtualisationpeutpeutêtreêtreintégréintégréauauprocesseurprocesseur::
+
+L'hyperviseurL'hyperviseur(type(type11))n'an'aplusplusbesoinbesoind’intercepterd’intercepteretettraduiretraduireleslesinstructionsinstructions
+
+L’OSL’OSinvitéinvitén’an’aplusplusbesoinbesoind’êtred’êtremodifiémodifié..
+
+AccélérationAccélérationdudufonctionnementfonctionnementdedel’environnentl’environnentvirtualisévirtualisé..
+•
+•IntelInteletetAMDAMDontontimplantéimplantéleursleurs
+technologies
+technologiesdedevirtualisationvirtualisation
+(extension
+(extensiondudujeuxjeuxd'instructionsd'instructions))
+
+AMDAMD--VV::AMDAMDVirtualizationVirtualization
+
+IntelIntelVTVT::IntelIntelVirtualizationVirtualization
+Technology
+Technology
+Ameni KALLEL CHAARI 48
+23/02/2025
+25
+Lexique
+Lexique
+•
+•pCPUpCPU
+
+UnUnpCPUpCPUdésignedésignesoitsoitununCPUCPULogiqueLogiquesoitsoitununCoeurCoeurPhysiquePhysiquesuivantsuivantlelecontextecontexte..
+
+CoeurCoeurPhysiquePhysiquedansdanslelecascasououl’l’HyperthreadingHyperthreadingestestindisponibleindisponibleououdésactivédésactivé..
+
+CPUCPULogiqueLogiquesisil’l’HyperthreadingHyperthreadingestestactivéactivé..
+
+OnOnpeutpeutainsiainsiassimilerassimilerpCPUpCPUauaunombrenombrededeCoresCoresLogiquesLogiques((LogicalLogicalProcessorsProcessors//lCPUlCPU))..
+
+ExEx::ServeurServeur––22SocketsSockets––XeonXeonQuadQuadCoreCore::
+
+SansSansHyperthreadingHyperthreading==22SocketsSocketsxx44CoresCores==88pCPUpCPU
+
+AvecAvecHyperthreadingHyperthreading==22SocketsSocketsxx((22xx44CoresCores))==1616pCPUpCPU
+Ameni KALLEL CHAARI 49
+Lexique
+Lexique
+•
+•vCPUvCPU
+
+vCPUvCPUdésigne un coredésigne un coreCPU virtuelCPU virtuelutilisé par utilisé par une Machine Virtuelle, c’est donc un une Machine Virtuelle, c’est donc un processus qui tourne sur unprocessus qui tourne sur unpCPUpCPU..
+•
+•Overcommitting CPUOvercommitting CPU
+
+C’estC’estlelefaitfaitd’utiliserd’utiliserdesdesressourcesressourcesenenexcès,excès,assignerassignerplusplusdedevCPUvCPUauxauxmachinesmachinesvirtuellesvirtuellesquequeleleserveurserveurn’enn’enpossèdepossède..
+Ameni KALLEL CHAARI 50
+23/02/2025
+26
+Lexique
+Lexique
+•
+•RatioRatioOvercommitOvercommit
+
+IlIldésignedésigneleletauxtauxdedesursur--allocationallocationdedel’host,l’host,c’estc’estmathématiquementmathématiquementlaladivisiondivisiondudunombrenombrededevCPUvCPUtotaltotaldesdesVMsVMsparparlelenombrenombrededepCPUpCPU..
+
+ExEx..SurSurununserveurserveursanssanshyperthreadinghyperthreadingavecavec22SocketsSocketsdede1010CoresCores,,ononveutveuttournertourner1010VMsVMsavecavec44vCPUvCPUchacune,chacune,j’auraisj’auraisauautotaltotal2020pCPUpCPU((22**1010))etet4040vCPUvCPU((1010**44))doncdoncununratioratiodede22((4040//2020))..
+
+L’utilisationL’utilisationdededeuxdeuxfoisfoisplusplusdedecorescoresquequeleleserveurserveurn’enn’enpossèdepossède..CeCeratioratioc’estc’estààl’administrateurl’administrateurdedelelechoisirchoisirsuivantsuivantlalaqualitéqualitédedeserviceservicequ’ilqu’ilsouhaitesouhaitedélivrerdélivrer..
+
+DeDepréférence,préférence,ononutiliseutiliseununratioratiodedemaximummaximum33pourpourdedelalaprodutionprodutionetetprocheprochedede11pourpourdesdesservicesservicesvraimentvraimentcritiquescritiques..
+Ameni KALLEL CHAARI 51
+Calculer le nombre maximum de vCPUs
+Calculer le nombre maximum de vCPUs supporté par un serveursupporté par un serveur
+•
+•FormuleFormuleGénéraleGénérale::
+(Number
+(Numberofofprocessors)processors)**(Number(Numberofofcores)cores)**(Number(Numberofofthreadsthreadsperpercore)core)**rationration
+•
+•ExempleExemple::
+
+PourPourununserveurserveuravecavec66corecoreIntelIntelXeonXeonpossédantpossédantdeuxdeuxsocketssockets((22CPU),CPU),sanssansHyperthreadingHyperthreading,,avecavecununratio=ratio=88::
+Nbre_max_vcpu
+Nbre_max_vcpu==22**66**11**88==1212**88==9696vCPUsvCPUs
+
+PourPourlelemêmemêmeserveurserveuravecavecHyperthreadingHyperthreading,,avecavecununratio=ratio=1212::
+Nbre_max_vcpu
+Nbre_max_vcpu==22**66**22**1212==2424**1212==288288vCPUsvCPUs
+
+PourPourununserveurserveur88cores/cores/1616threadsthreads((MultiMulti--ThreadingThreading))avecavec11seulseulprocesseurprocesseur,,avecavecununratio=ratio=11::
+Nbre_max_vcpu
+Nbre_max_vcpu==11**88**1616**11==88**1616==128128vCPUsvCPUs
+Ameni KALLEL CHAARI 52
+23/02/2025
+27
+Principe de la virtualisation de la
+Principe de la virtualisation de la mémoiremémoire
+•
+•LeLepointpointcléclédedelalavirtualisationvirtualisationdedelalamémoiremémoirerésiderésidedansdansl’introductionl’introductiond’und’unespaceespaced’adressed’adressemémoiremémoirevirtuellevirtuelle..
+•
+•LesLesmachinesmachinesvirtuellesvirtuellespensentpensentqu‘ellesqu‘elless'exécutents'exécutentdansdansl'espacel'espaced'adressaged'adressagephysiquephysiqueréelréel..Cependant,Cependant,ellesellesaccèdentaccèdentenenréalitéréalitéauxauxadressesadressesvirtuellesvirtuellesviavialeleVMMVMM((hyperviseurhyperviseur))..
+•
+•UtilisationUtilisationdesdestablestablesdedecorrespondancecorrespondance(mappage)(mappage)entreentreadresseadressemémoiremémoirephysiquephysiqueetetvirtuellevirtuelle..
+Ameni KALLEL CHAARI 53
+La virtualisation des postes de
+La virtualisation des postes de travailtravail
+Ameni KALLEL CHAARI
+23/02/2025
+28
+Principe
+Principe
+•
+•LaLavirtualisationvirtualisationdesdespostespostesdedetravailtravailestestl’évolutionl’évolutionlogiquelogiquededelalavirtualisationvirtualisationdesdesserveursserveurs..
+•
+•PuisquePuisqueleslesserveursserveurssontsontpuissants,puissants,qu’ilsqu’ilssontsontcapablescapablesdedefairefairetournertournerdesdesenvironnementsenvironnementsisolésisolés((VMsVMs),),etetqu’ilqu’ilestesttrèstrèsfacilefaciled’end’encréercréerrapidement,rapidement,pourquoipourquoinenepaspasdéployerdéployerleslespostespostesdedetravailtravailsursurleslesserveursserveursetetvisualiservisualisercecequiquisesepassepassedansdansuneunemachinemachinevirtuellevirtuellegrâcegrâceààdesdessimplessimplesterminauxterminauxlégerslégers??
+Ameni KALLEL CHAARI 55
+Avantages
+Avantages
+
+RienRienn’estn’estfaitfaitenenlocal!local!LaLachargechargeestestrépartierépartiesursurleslesserveursserveurs(puissance(puissanceassuréeassurée));;
+
+LesLespostespostesdedetravailtravailnenesontsontplusplusdépendantsdépendantsdudumatérielmatériel(finis(finisleslesréparations,réparations,lesleschangementschangementsdedePC,PC,leslesmisesmisesààjourjourhardware,hardware,etcetc));;
+
+LeLerisquerisquededefuitefuited’informationsd’informationsestestmieuxmieuxmaîtrisemaîtrise(aucune(aucunedonnéesdonnéesn’estn’eststockéestockéeenenlocallocal));;
+Ameni KALLEL CHAARI 56
+23/02/2025
+29
+Avantages
+Avantages
+
+IlIlestestpossiblepossibled’éviterd’éviterlelevolvol(le(leterminalterminalnenefaitfaitquequeseseconnecter)connecter)..Seul,Seul,ililnenesertsertààrienrienetetnenevautvautpaspastrèstrèschercher;;
+
+LaLaconsommationconsommationélectriqueélectriqueestestréduiteréduite;;
+
+IlIln’estn’estnécessairenécessairedederacheterracheterououdedefairefaireévoluerévoluerlelematérielmatériel..
+Ameni KALLEL CHAARI 57
+Architecture
+Architecture
+VDI
+VDI(Virtual(VirtualDesktopDesktopInfrastructure)Infrastructure)reposereposesursuruneunearchitecturearchitecturecomplexecomplexefaisantfaisantappelappelààplusieursplusieursélémentséléments::
+
+HyperviseurHyperviseur::C’estC’estsursurceceououcesceshyperviseur(s)hyperviseur(s)quequevontvontêtreêtrehébergéeshébergéesnosnosdifférentesdifférentesmachinesmachinesvirtuelles,virtuelles,c’estc’est--àà--diredirenosnospostespostesclientsclientsvirtualisésvirtualisés..
+
+ConnectionConnectionBrokerBroker::sertsertààétablirétabliruneuneconnexionconnexionentreentreununutilisateurutilisateuretetsasamachinemachinevirtuellevirtuelleetetquiquivavadonnerdonnerl’ordrel’ordreauauVMVMdededémarrerdémarrerououdedes’éteindres’éteindre(ou(oudedesesemettremettreenenpause)pause)lorsqu’unlorsqu’unutilisateurutilisateurseseconnecteconnecteetetsesedéconnectedéconnecte..
+
+PartiePartieclientecliente::IIlls’agits’agitduduposteposteclientclientsursurlequellequelvavas’exécuters’exécuterlelepostepostededetravailtravailvirtuel,virtuel,enengénéralgénéralviavialeleprotocoleprotocoleRDPRDP..
+Ameni KALLEL CHAARI 58
+23/02/2025
+30
+Architecture
+Architecture
+Ameni KALLEL CHAARI 59
+La virtualisation des réseaux
+La virtualisation des réseaux
+Ameni KALLEL CHAARI 60
+23/02/2025
+31
+La virtualisation des réseaux
+La virtualisation des réseaux
+•
+•De manière générale, la virtualisation des réseaux De manière générale, la virtualisation des réseaux consiste à partager une même infrastructure consiste à partager une même infrastructure physique (débit des liens, ressources CPU des physique (débit des liens, ressources CPU des routeurs,...) au profit de plusieurs réseaux virtuels routeurs,...) au profit de plusieurs réseaux virtuels isolés. isolés.
+•
+•Un VLAN (Un VLAN (Virtual Local Area NetworkVirtual Local Area Network) est un ) est un réseau local regroupant un ensemble de réseau local regroupant un ensemble de machines de façon logique et non physique. machines de façon logique et non physique. Puisqu’un VLAN est une entité logique, sa Puisqu’un VLAN est une entité logique, sa création et sa configuration sont réalisées de création et sa configuration sont réalisées de manière logicielle et non matériellemanière logicielle et non matérielle
+Ameni KALLEL CHAARI 61
+Types de réseaux virtuels
+Types de réseaux virtuels
+•
+•Les réseaux virtuels de niveau 1Les réseaux virtuels de niveau 1
+•
+•Les réseaux virtuels de niveau 2Les réseaux virtuels de niveau 2
+•
+•Les réseaux virtuels de niveau 3Les réseaux virtuels de niveau 3
+Ameni KALLEL CHAARI 62
+23/02/2025
+32
+Les réseaux virtuels de niveau 1
+Les réseaux virtuels de niveau 1
+•
+•Les réseaux virtuels de niveau 1Les réseaux virtuels de niveau 1, appelés , appelés réseaux virtuels par port (réseaux virtuels par port (portport--based VLANbased VLAN) : ) : ils définissent un réseau virtuel en fonction ils définissent un réseau virtuel en fonction des ports de raccordement sur le des ports de raccordement sur le commutateur (commutateur (switchswitch). Ainsi, chaque port du ). Ainsi, chaque port du commutateur est associé à un réseau virtuelcommutateur est associé à un réseau virtuel..
+Ameni KALLEL CHAARI 63
+Les réseaux virtuels de niveau 2
+Les réseaux virtuels de niveau 2
+•
+•Les réseaux virtuels de niveau 2Les réseaux virtuels de niveau 2, appelés , appelés réseaux virtuels par adresse MAC : ils réseaux virtuels par adresse MAC : ils consistent à définir un réseau virtuel sur base consistent à définir un réseau virtuel sur base des adresses MAC des des adresses MAC des stations. Ce type de VLAN stations. Ce type de VLAN est beaucoup plus souple est beaucoup plus souple que le précèdent car il est que le précèdent car il est indépendant de la indépendant de la localisation de la localisation de la machinemachine..
+Ameni KALLEL CHAARI 64
+23/02/2025
+33
+Les réseaux virtuels de niveau 3
+Les réseaux virtuels de niveau 3
+•
+•Les réseaux virtuels de niveau 3Les réseaux virtuels de niveau 3. On distingue . On distingue principalement deux types de VLAN de niveau 3 :principalement deux types de VLAN de niveau 3 :
+–
+–Les réseaux virtuels par adresse de sousLes réseaux virtuels par adresse de sous--réseauréseau
+–
+–Les réseaux virtuels par protocole. Dans ce cas, les Les réseaux virtuels par protocole. Dans ce cas, les réseaux virtuels sont crées sur base des protocoles réseaux virtuels sont crées sur base des protocoles utilises (TCP/IP, IPX,...) et les stations sont regroupées en utilises (TCP/IP, IPX,...) et les stations sont regroupées en réseaux virtuels suivant le protocole qu’elles utilisentréseaux virtuels suivant le protocole qu’elles utilisent..65 Ameni KALLEL CHAARI
+Les avantages des VLANs
+Les avantages des VLANs
+Les avantages qu’offrent les réseaux virtuels
+Les avantages qu’offrent les réseaux virtuels sont les suivants :sont les suivants :
+•
+•une réduction du une réduction du trafictraficde diffusion (de diffusion (broadcastbroadcast) )
+•
+•une une sécuritésécuritéaccrue puisque l’information est accrue puisque l’information est encapsulée dans une couche supplémentaire encapsulée dans une couche supplémentaire
+•
+•une meilleure une meilleure flexibilitéflexibilitépuisqu’une modification puisqu’une modification de la structure des réseaux peut être réalisée en de la structure des réseaux peut être réalisée en modifiant la configuration du commutateurmodifiant la configuration du commutateur..
+Ameni KALLEL CHAARI 66
+23/02/2025
+34
+Les types de connexion au réseau
+Les types de connexion au réseau
+•
+•En termes de connexion au réseau, on trouve En termes de connexion au réseau, on trouve plusieurs types de connexion au réseau, plusieurs types de connexion au réseau,
+•
+•Parmi ces types de connexion au réseau, on Parmi ces types de connexion au réseau, on trouve :trouve :
+
+BridgeBridge
+
+NATNAT
+
+HostHost--OnlyOnly
+
+LAN SegmentLAN Segment
+Ameni KALLEL CHAARI 67
+Les types de connexion au réseau
+Les types de connexion au réseau1. Le type Bridge1. Le type Bridge
+•
+•CeCemodemodeestestleleplusplusutiliséutilisépuisqu’ilpuisqu’ilpermetpermetdedeconnecterconnecteruneunemachinemachinevirtuellevirtuelledirectementdirectementsursurleleréseauréseauphysiquephysiquesursurlequellequelestestbranchéebranchéelalacartecarteréseauréseauphysiquephysiquededel’hôtel’hôte..
+•
+•SiSil’hôtel’hôtephysiquephysiquedisposedisposededeplusieursplusieurscartescartesréseaux,réseaux,ononpeutpeutchoisirchoisirdedecréercréerununpontpontcecequiquipermetpermetuneuneflexibilitéflexibilitédansdanslalaconfigurationconfigurationetetdansdanslalagestiongestiondedelalaconnexionconnexionréseauréseau
+Ameni KALLEL CHAARI 68
+23/02/2025
+35
+Les types de connexion au réseau
+Les types de connexion au réseau1. Le type Bridge1. Le type Bridge
+Ameni KALLEL CHAARI 69
+Les types de connexion au réseau
+Les types de connexion au réseau1. Le type Bridge (1. Le type Bridge (Exemple)Exemple)
+Ameni KALLEL CHAARI 70
+
+L’adresseL’adresseIPIPdedel'hôtel'hôte::192192..168168..11..1313(obtenu(obtenuparparDHCPDHCPd’uned’uneBOX)BOX)
+
+L’adresseL’adresseIPIPdansdanslalamachinemachinevirtuellevirtuelle::192192..168168..11..1414(obtenu(obtenuégalementégalementparparDHCPDHCPd’uned’uneBOX)BOX)
+
+L’adresseL’adresseIPIPBoxBoxinternetinternet::192192..168168..11..11
+Rq
+Rq::LesLesmachinesmachinessontsontsursurlelemêmemêmeréseauréseauavecavecchacunchacunleurleuradresseadresseIP,IP,quequelalamachinemachinesoitsoituneunemachinemachinephysiquephysiqueououuneuneVMVM..
+23/02/2025
+36
+Les types de connexion au réseau
+Les types de connexion au réseau2. Le type NAT2. Le type NAT
+•
+•CeCetypetypededeconnexionconnexionpermetpermetààlalamachinemachinevirtuellevirtuelled’accéderd’accéderauauréseauréseaudedefaçonfaçontotalementtotalementtransparentetransparentepuisquepuisquec’estc’estl’adressel’adresseIPIPdedelalamachinemachinephysiquephysiquequiquiestestutiliséeutiliséegrâcegrâceààlalatranslationtranslationd’adressed’adresseduduprocessusprocessusNATNAT..
+•
+•MasquerMasquerl’adressel’adresseIPIPdesdesclientsclientsquiquiluiluisontsontconnectésconnectéspourpoursortirsortirsursurleleréseauréseau..
+•
+•LaLamachinemachinevirtuellevirtuelleutiliseutiliseuneuneadresseadresseIPIPdistribuéedistribuéeparparl’applicationl’applicationdedevirtualisationvirtualisationviaviaununserveurserveurDHCP,DHCP,puispuiselleelleutiliserautiliseravotrevotrehôtehôtephysiquephysiquecommecommepasserellepasserellepourpoursortirsortirduduréseauréseau..
+Ameni KALLEL CHAARI 71
+Les types de connexion au réseau
+Les types de connexion au réseau2. Le type NAT2. Le type NAT
+Ameni KALLEL CHAARI 72
+23/02/2025
+37
+Les types de connexion au réseau
+Les types de connexion au réseau1. Le type NAT (1. Le type NAT (Exemple)Exemple)
+Ameni KALLEL CHAARI 73
+
+L’adresseL’adresseIPIPdansdanslalaVMVMobtenuobtenudedel’hôtel’hôte::1010..00..22..1515((parparDHCPDHCPdudulogiciellogicieldedevirtualisation)virtualisation)
+
+PasserellePasserelleparpardéfautdéfautdansdanslalaVMVMobtenuobtenuparparl’hôtel’hôte::1010..00..22..22
+Rq
+Rq::
+•
+•L’hôte,L’hôte,lalaVM,VM,etetd'autresd'autrespostespostespourrontpourrontcommuniquercommuniquerentreentreeuxeuxdedelalamêmemêmefaçonfaçonquequeplusieursplusieursmachinesmachinesderrièrederrièreuneuneBOXBOXpourrontpourrontseseconnecterconnecterààInternet,Internet,c’estc’estlalaBOXBOXquiquiestestvuevuesursurlelenetnetetetquiquifaitfaitlalatranslationtranslationpourpourrenvoyerrenvoyerlalaréponseréponseauaubonbondestinatairedestinataire..
+•
+•UnUnautreautrepostepostenenepourrapourrapaspasaccéderaccéderààlalaVM,VM,LaLacartecarteréseauréseauvirtuellevirtuellededel’hôtel’hôtenenecomportecomportepaspasdedepasserellepasserelleversversleslesautresautresordis,ordis,uniquementuniquementuneunepasserellepasserelleentreentreluiluietetsessesVMsVMs..
+Les types de connexion au réseau
+Les types de connexion au réseau1. Le type NAT (1. Le type NAT (Exemple)Exemple)
+Ameni KALLEL CHAARI 74
+•
+•SiSiplusieursplusieursmachinesmachinesdoiventdoiventcommuniquercommuniqueravecaveclalaVM,VM,ililfautfaututiliserutiliserlelemodemodepontpont..
+•
+•UnUnpingpingdedel'hôtel'hôte((192192,,168168,,11,,1313))versversl'adressel'adresseIPIPdedelalaVMVM1010..00..22..1515nenefonctionnefonctionnepaspas..
+•
+•DansDanslalaVM,VM,ununpingpingsursur1010..00..22..22répond,répond,ununpingpingsursur192192..168168..11..1313aussi,aussi,cescesdeuxdeuxadressesadressescorrespondentcorrespondentauxaux22cartescartesréseauréseaudedel'hôte,l'hôte,l'unel'uneréelle,réelle,etetl'autrel'autrevirtuellevirtuellecréecréeparparVirtualBoxVirtualBox..
+23/02/2025
+38
+Les types de connexion au réseau
+Les types de connexion au réseau3. Le type Host3. Le type Host--OnlyOnly
+•
+•CeCetypetypededeconnexionconnexionnenepermetpermetpaspasdedesortirsortirversversununréseauréseauextérieur,extérieur,ninid’accéderd’accéderauauréseauréseaulocallocalparparl’intermédiairel’intermédiairededelalacartecarteréseauréseauphysiquephysiquededelalamachinemachinephysiquephysiquehôtehôte..
+•
+•CeCemodemodepermetpermetuniquementuniquementd’établird’établiruneuneconnexionconnexionentreentrelalamachinemachinevirtuellevirtuelleetetlalamachinemachinephysiquephysique..CelaCelaparparl’intermédiairel’intermédiairededel’adaptateurl’adaptateurvirtuelvirtueldedelalamachinemachinevirtuellevirtuelleetetl’adaptateurl’adaptateurvirtuelvirtueldedelalamachinemachinephysiquephysiquequiquiobtiendrontobtiendrontdesdesadressesadressesIPIPviavialeleserveurserveurDHCPDHCPvirtuelvirtueldedel’hyperviseurl’hyperviseur..
+Ameni KALLEL CHAARI 75
+Les types de connexion au réseau
+Les types de connexion au réseau3. Le type Host3. Le type Host--OnlyOnly
+Ameni KALLEL CHAARI 76
+23/02/2025
+39
+Les types de connexion au réseau
+Les types de connexion au réseau4. Le type LAN Segment4. Le type LAN Segment
+•
+•LeLetypetypeLANLANSegmentSegmentpermetpermetd’isolerd’isolerdesdesmachinesmachinessursurununLANLANvirtuelvirtuel..
+•
+•ParParexemple,exemple,sisiununLANLANvirtuelvirtuel««LANLAN--11»»estestcréé,créé,toutestoutesleslesmachinesmachinesayantayantuneunecartecarteréseauréseauenenmodemodeLANLANSegmentSegmentconnectéeconnectéeauau««LANLAN--11»»pourrontpourrontcommuniquercommuniquerensembleensemble..toutestoutesleslesmachinesmachinesreliéesreliéesàà««LANLAN--22»»pourrontpourrontcommuniquercommuniquerensembleensemblemaismaisnenepourrontpourrontpaspascommuniquercommuniqueravecavecleslesmachinesmachinesvirtuellesvirtuellesdudu««LANLAN--11»»..
+Rq
+Rq::CeCemodemodepermetpermetààplusieursplusieursVMVMetetààlalamachinemachinehôtehôted’êtred’êtredansdansununréseauréseauisolé,isolé,commecommeununVLANVLAN..LesLesVMsVMsdoiventdoiventêtreêtresursurlelemêmemêmehôtehôtepourpoursesevoirvoirlele««VLANVLAN»»..LaLamachinemachinehôtehôtenenefaitfaitpaspaspartiepartiededececeVLANVLAN..
+Ameni KALLEL CHAARI 77
+Les types de connexion au réseau
+Les types de connexion au réseau4. Le type LAN Segment4. Le type LAN Segment
+Ameni KALLEL CHAARI 78
+23/02/2025
+40
+Les types de connexion au réseau
+Les types de connexion au réseau
+Remarques
+Remarques::
+•
+•LeLemodemodeBridgeBridgeetetlelemodemodeNATNATsontsontleslesseulsseulsquiquipermettentpermettentd’accéderd’accéderauauréseauréseauphysiquephysiquesursurlequellequell’hôtel’hôtephysiquephysiqueestestconnectéeconnectée..
+•
+•LeLeLANLANSegmentSegmentpeutpeutêtreêtreutiliséutilisépourpourisolerisolercertainescertainesmachinesmachinesvirtuellesvirtuellesdansdansununLANLANvirtuelvirtuelquiquiaurontaurontpourpourpasserellepasserelleuneunemachinemachinevirtuellevirtuelleayantayantdeuxdeuxcartescartes::uneunedansdansleleLANLANvirtuelvirtuelavecavecleslesautresautresmachinesmachinesvirtuellesvirtuellesetetuneuneenenmodemodeBridgeBridgepourpoursortirsortirsursurleleréseauréseau..
+Ameni KALLEL CHAARI 79
+La virtualisation de stockage
+La virtualisation de stockage
+Ameni KALLEL CHAARI 80
+23/02/2025
+41
+La virtualisation de stockage
+La virtualisation de stockage
+•
+•Le principe de base de la virtualisation du stockage est de Le principe de base de la virtualisation du stockage est de gérer une interface qui permet de dissocier la gestion gérer une interface qui permet de dissocier la gestion physique des disques (et des baies de stockage) visphysique des disques (et des baies de stockage) vis--àà--vis vis des serveurs qui l'utilisent. des serveurs qui l'utilisent. Ameni KALLEL CHAARI 81
+La virtualisation de stockage
+La virtualisation de stockage
+Ameni KALLEL CHAARI 82
+23/02/2025
+42
+La virtualisation de stockage
+La virtualisation de stockage
+•
+•La virtualisation de stockage permet :La virtualisation de stockage permet :
+
+d’adjoindre un périphérique de stockage supplémentaire sans d’adjoindre un périphérique de stockage supplémentaire sans interruption des servicesinterruption des services;;
+
+de regrouper des unités de disques durs de différentes vitesses, de regrouper des unités de disques durs de différentes vitesses, de différentes tailles et de différents constructeurs ;de différentes tailles et de différents constructeurs ;
+
+de réallouer dynamiquement de l’espace de stockage. Ainsi, un de réallouer dynamiquement de l’espace de stockage. Ainsi, un serveur nécessitant un espace de stockage supplémentaire pourra serveur nécessitant un espace de stockage supplémentaire pourra rechercher des ressources non allouées sur le disque logique. rechercher des ressources non allouées sur le disque logique. Inversement, un serveur nécessitant moins d’espace de stockage Inversement, un serveur nécessitant moins d’espace de stockage pourra libérer cet espace et le rendre disponible pour d’autres pourra libérer cet espace et le rendre disponible pour d’autres serveursserveurs..
+Ameni KALLEL CHAARI 83
+La virtualisation de stockage
+La virtualisation de stockage
+•
+•Dans une machine virtuelle, les données sont stockées sur un Dans une machine virtuelle, les données sont stockées sur un disque dur virtuel. Ce disque dur se présente sous forme de disque dur virtuel. Ce disque dur se présente sous forme de fichier dans le système de fichiers de l'hôte :fichier dans le système de fichiers de l'hôte :
+
+VHD chez MicrosoftVHD chez Microsoft
+
+VDI chez OracleVDI chez Oracle
+
+VMDK chez VMWareVMDK chez VMWare
+
+OVF format ouvertOVF format ouvert
+Ameni KALLEL CHAARI 84
+23/02/2025
+43
+La virtualisation de stockage
+La virtualisation de stockage
+•
+•Les disques virtuels peuvent être statiques ou dynamiques. Les disques virtuels peuvent être statiques ou dynamiques.
+•
+•Dans le cas où le disque est statique, si on crée un disque de Dans le cas où le disque est statique, si on crée un disque de 50 Go, le fichier de disque virtuel fera 50 Go sur le système 50 Go, le fichier de disque virtuel fera 50 Go sur le système hôtehôte..
+•
+•Avec un disque dynamique, le fichier de disque virtuel se Avec un disque dynamique, le fichier de disque virtuel se remplit au fur et à mesure qu'il est utilisé. Un disque de 50 Go remplit au fur et à mesure qu'il est utilisé. Un disque de 50 Go dans lequel il n'y a pas de données ne présente pas dans le dans lequel il n'y a pas de données ne présente pas dans le système de fichiers hôte grande chosesystème de fichiers hôte grande chose..
+Ameni KALLEL CHAARI 85
+La virtualisation de stockage
+La virtualisation de stockageHistoriqueHistorique
+Historique du développement de l'architecture de stockage
+Historique du développement de l'architecture de stockage
+Ameni KALLEL CHAARI 86
+23/02/2025
+44
+La virtualisation de stockage
+La virtualisation de stockageHistorique Historique
+Historique des produits de stockage
+Historique des produits de stockage
+Ameni KALLEL CHAARI 87
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+•
+•L'espace de stockage peut s'agir d'un volume ou simplement d'un L'espace de stockage peut s'agir d'un volume ou simplement d'un fichier et on peut placer l'intégralité de cet espace sur un disque fichier et on peut placer l'intégralité de cet espace sur un disque local, un réseau de stockage ou un autre serveurlocal, un réseau de stockage ou un autre serveur..
+Ameni KALLEL CHAARI 88
+23/02/2025
+45
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+1. DAS : Direct Attach Storage
+1. DAS : Direct Attach Storage
+Ameni KALLEL CHAARI 89
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+2. SAN : Storage Area Network
+2. SAN : Storage Area Network
+•
+•Un SAN, ou réseau de stockage (Storage Area Network), est un réseau Un SAN, ou réseau de stockage (Storage Area Network), est un réseau sur lequel circulent les données entre un système et son stockage. sur lequel circulent les données entre un système et son stockage.
+•
+•Les deux principaux protocoles d'accès à un SAN sont Les deux principaux protocoles d'accès à un SAN sont iSCSIiSCSIet et Fibre Fibre ChannelChannel..
+Ameni KALLEL CHAARI 90
+23/02/2025
+46
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+2. SAN : Storage Area Network
+2. SAN : Storage Area Network
+•
+•iSCSIiSCSI((iinternet nternet SSmall mall CComputer omputer SSystem ystem IInterface) est un protocole nterface) est un protocole d'accès disque fonctionnant sur un réseau Ethernet, il permet d'accès disque fonctionnant sur un réseau Ethernet, il permet d'implémenter un réseau de stockage en profitant des équipements d'implémenter un réseau de stockage en profitant des équipements de commutation standardsde commutation standards..
+•
+•Fibre Channel Fibre Channel Basé sur des fibres optiques il assure une latence et un Basé sur des fibres optiques il assure une latence et un débit bien meilleurs que iSCSI, à un prix bien sûr plus élevé. Son débit bien meilleurs que iSCSI, à un prix bien sûr plus élevé. Son principe d'utilisation est le même qu'un SAN iSCSIprincipe d'utilisation est le même qu'un SAN iSCSI..
+Ameni KALLEL CHAARI 91
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+3. NAS (Network
+3. NAS (Network--AttachedAttachedStorage)Storage)
+•
+•Un NAS, ou stockage réseau est simplement un serveur fournissant Un NAS, ou stockage réseau est simplement un serveur fournissant leurs fichiers à d'autres serveurs par le réseau.leurs fichiers à d'autres serveurs par le réseau.
+•
+•NFS est le standard universel pour l'accès aux fichiers sur un réseau, NFS est le standard universel pour l'accès aux fichiers sur un réseau, c'est le protocole le plus utilisé dans les NAS.c'est le protocole le plus utilisé dans les NAS.
+Ameni KALLEL CHAARI 92
+23/02/2025
+47
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+IP SAN vs. FC SAN
+IP SAN vs. FC SAN
+Ameni KALLEL CHAARI 93
+La virtualisation de stockage
+La virtualisation de stockageLes trois méthodes de stockage Les trois méthodes de stockage
+Ameni KALLEL CHAARI 94
+23/02/2025
+48
+Les avantages de la virtualisation
+1. Une optimisation de l’infrastructure
+Rendement d’un serveur en
+l’absence de virtualisation
+Rendement d’un serveur en
+présence de virtualisation
+Ameni KALLEL CHAARI 95
+Les avantages de la virtualisation
+2. Une réduction de l’infrastructure physique et des
+économies d’énergies
+• Avec la virtualisation, les entreprises font des
+économies en terme d’espace mais aussi en
+terme de frais de ventilation et d’alimentation.
+• La réduction des couts d’alimentation et de
+refroidissement s’inscrit également dans une
+tendance générale à la promotion du respect
+de l’environnement.
+Ameni KALLEL CHAARI 96
+23/02/2025
+49
+Les avantages de la virtualisation
+Les avantages de la virtualisation3. 3. Une reprise automatique lors des incidentsUne reprise automatique lors des incidents
+•
+•La virtualisation permet d’améliorer la prévention La virtualisation permet d’améliorer la prévention et la gestion des pannes ainsi que le plan de et la gestion des pannes ainsi que le plan de reprise de l’activité du systèmereprise de l’activité du système..
+•
+•En effet, les équipements virtuels étant En effet, les équipements virtuels étant constitués d’un ensemble de fichiers, il est très constitués d’un ensemble de fichiers, il est très simple de les sauvegarder. Si un problème simple de les sauvegarder. Si un problème survient sur une machine physique, les fichiers survient sur une machine physique, les fichiers qui ont été sauvegardés auparavant pourront qui ont été sauvegardés auparavant pourront rapidement être restaurés sur une autre machine rapidement être restaurés sur une autre machine physique, en attendant que la machine virtuelle physique, en attendant que la machine virtuelle initiale soit redémarréeinitiale soit redémarrée..
+Ameni KALLEL CHAARI 97
+Les avantages de la virtualisation
+Les avantages de la virtualisation4. 4. Une optimisation de la sécurité des donnéesUne optimisation de la sécurité des données
+•
+•Par la centralisation des ressources applicatives au sein Par la centralisation des ressources applicatives au sein du centre de données, la virtualisation contribue à du centre de données, la virtualisation contribue à sécuriser l’accès et l’usage des données de l’entreprise. sécuriser l’accès et l’usage des données de l’entreprise. Il est en effet beaucoup plus simple de contrôler l’accès Il est en effet beaucoup plus simple de contrôler l’accès aux données lorsqu’elles sont regroupées en un lieu aux données lorsqu’elles sont regroupées en un lieu que lorsqu’elles sont réparties sur l’ensemble des sites que lorsqu’elles sont réparties sur l’ensemble des sites de l’entreprise. de l’entreprise.
+•
+•Il est néanmoins indispensable de disposer d’un Il est néanmoins indispensable de disposer d’un système de synchronisation qui permettra de système de synchronisation qui permettra de sauvegarder l’ensemble des informations sur un site sauvegarder l’ensemble des informations sur un site extérieurextérieur..
+Ameni KALLEL CHAARI 98
+23/02/2025
+50
+Les avantages de la virtualisation
+Les avantages de la virtualisation5. Une facilité de migration5. Une facilité de migration
+•
+•La virtualisation apporte la possibilité de migrer La virtualisation apporte la possibilité de migrer facilement un environnement virtuel d’une facilement un environnement virtuel d’une machine physique vers une autre, facilitant ainsi machine physique vers une autre, facilitant ainsi la mise à jour du centre de donnée ou le la mise à jour du centre de donnée ou le remplacement de matériel défectueuxremplacement de matériel défectueux..
+•
+•De nombreux outils d’aide à la migration ont été De nombreux outils d’aide à la migration ont été développés. Ils peuvent être regroupés développés. Ils peuvent être regroupés en 3 en 3 grandes catégories grandes catégories : :
+–
+–P2V (P2V (Physical to VirtualPhysical to Virtual))
+–
+–V2P (V2P (Virtual to PhysicalVirtual to Physical) )
+–
+–V2V (V2V (Virtual Virtual to Virtualto Virtual))
+Ameni KALLEL CHAARI 99
+Les avantages de la virtualisation
+Les avantages de la virtualisation6. Flexibilité et compatibilité6. Flexibilité et compatibilité
+•
+•La virtualisation supprime toute dépendance La virtualisation supprime toute dépendance entre une application donnée et l’aspect entre une application donnée et l’aspect matériel de la machine sur laquelle elle est matériel de la machine sur laquelle elle est exécutée. exécutée.
+•
+•Il devient alors possible d’exécuter sur un Il devient alors possible d’exécuter sur un système une application qui a été développée système une application qui a été développée à destination d’un autre systèmeà destination d’un autre système..
+Ameni KALLEL CHAARI 100
+23/02/2025
+51
+Les avantages de la virtualisation
+Les avantages de la virtualisation7. Un cloisonnement7. Un cloisonnement
+•
+•Le développement d’une application s’accompagne Le développement d’une application s’accompagne nécessairement de phases de tests au cours desquelles le nécessairement de phases de tests au cours desquelles le programmeur s’assure du bon fonctionnement et de la programmeur s’assure du bon fonctionnement et de la stabilité de son logiciel. Néanmoins, il est parfois risqué stabilité de son logiciel. Néanmoins, il est parfois risqué d’exécuter une application lorsque l’on n’est pas certain du d’exécuter une application lorsque l’on n’est pas certain du résultat qui sera produit. résultat qui sera produit.
+•
+•Pour réduire les risques liés à des applications peu fiables, Pour réduire les risques liés à des applications peu fiables, la virtualisation peut être utilisée pour créer des la virtualisation peut être utilisée pour créer des environnements isolés et sécurisés qui vont servir de environnements isolés et sécurisés qui vont servir de plateformes d’essai. plateformes d’essai.
+•
+•Il devient possible d’itérer un grand nombre de fois un Il devient possible d’itérer un grand nombre de fois un processus de test sans craindre de déstabiliser la machine processus de test sans craindre de déstabiliser la machine physique sur laquelle s’exécute l’applicationphysique sur laquelle s’exécute l’application..
+Ameni KALLEL CHAARI 101
+Les inconvénients de la virtualisation
+Les inconvénients de la virtualisation
+•
+•Un point de défaillance uniqueUn point de défaillance unique
+•
+•Un recours à des machines puissantesUn recours à des machines puissantes
+•
+•Une dégradation possible des performancesUne dégradation possible des performances
+•
+•Une complexité accrue de l’analyse d’erreursUne complexité accrue de l’analyse d’erreurs
+•
+•Parfois une impossibilité de virtualisationParfois une impossibilité de virtualisation
+Ameni KALLEL CHAARI 102
+23/02/2025
+52
+Conclusion
+Conclusion
+•
+•La virtualisation est une technologie aujourd’hui La virtualisation est une technologie aujourd’hui largement répandue au sein des entreprises. largement répandue au sein des entreprises.
+•
+•Elle peut prendre de nombreuses formes et elle Elle peut prendre de nombreuses formes et elle est présente à tous les niveauxest présente à tous les niveaux..
+•
+•Bien que ces solutions présentent un certain Bien que ces solutions présentent un certain nombre d’inconvénients, les avantages qu’elles nombre d’inconvénients, les avantages qu’elles apportent peuvent s’avérer déterminants dans la apportent peuvent s’avérer déterminants dans la gestion des ressources informatiquesgestion des ressources informatiques..
+Ameni KALLEL CHAARI 103
